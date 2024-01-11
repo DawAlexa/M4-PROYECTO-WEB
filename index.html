@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec 360</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .f1 {
+            width: 1450px;
+            height: 40px;
+            background-color: white;
+            position: relative;
+        }
+
+        .menu {
+            position: absolute;
+            left: 525px;
+            top: 10px;
+            width: 400px;
+            height: 20px;
+            background-color: rgba(200, 40, 40, 0);
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .m1 {
+            position: absolute;
+            width: 80px;
+            height: 20px;
+            background-color: #1b1f3400;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .m2 {
+            position: absolute;
+            left: 90px;
+            width: 80px;
+            height: 20px;
+            background-color: #1b1f3400;
+            flex-grow: 2;
+            text-align: center;
+        }
+
+        .m3 {
+            position: absolute;
+            left: 180px;
+            width: 80px;
+            height: 20px;
+            background-color: #1b1f3400;
+            text-align: center;
+        }
+
+        .m4 {
+            position: absolute;
+            left: 270px;
+            width: 80px;
+            height: 20px;
+            background-color: #1b1f3400;
+            text-align: center;
+
+        }
+
+        .m {
+            font-family: 'calibri';
+            color: #0a032d;
+            font-size: 15px;
+
+
+        }
+
+
+
+        .f2 {
+             margin-top: -20px;
+            width: 1450px;
+            height: 650px;
+            background-color: rgb(59, 59, 59);
+        }
+
+        .f3 {
+            width: 1450px;
+            height: 1000px;
+            top: -8px;
+            background-color: rgb(8, 26, 126);
+            position: relative;
+        }
+        .n1 {
+            position: relative;
+            width: 1450px;
+            height:150px;
+            
+            
+            background-color: #ffffff;
+        
+            
+        }
+        .n1a{
+            position: absolute;
+            width:250px;
+            height:80px;
+            top: 90px;
+            left: 600px;
+            text-align:center;
+           
+        }    
+        .noticias{
+            
+            font-family: 'calibri';
+            color: #0a032d;
+            font-size: 30px;
+
+        }
+        .n2{
+            position: absolute;
+            width:350px;
+            height:200px;
+            top: 250px;
+            left: 100px;
+            background-color: black;
+            text-align:center;
+           
+        }
+        .n3{
+            position: absolute;
+            width:350px;
+            height:200px;
+            top: 250px;
+            left:550px;
+            background-color: black;
+            text-align:center;  
+        }
+        .n4{
+            position: absolute;
+            width:350px;
+            height:200px;
+            top: 250px;
+            left:1000px;
+            background-color: black;
+            text-align:center;  
+        }
+        
+
+
+
+        .new_footer_top {
+            width: 1450px;
+            height:500px;
+            margin-top: 900px;
+            position: relative;
+            
+        }
+        
+        .new_footer_area {
+            background: #fbfbfd;
+        }
+        
+        
+        .new_footer_area .footer_bottom {
+            padding-top: 5px;
+            padding-bottom: 50px;
+        }
+        .footer_bottom {
+            height: 100px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 0px;
+            color: #7f88a6;
+            padding: 27px 0px;
+            margin-top: -250px;
+        }
+        .new_footer_top .company_widget p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #6a7695;
+            margin-bottom: 20px;
+        }
+        .new_footer_top .company_widget .f_subscribe_two .btn_get {
+            border-width: 1px;
+            margin-top: 20px;
+        }
+        .btn_get_two:hover {
+            background: transparent;
+            color: #5e2ced;
+        }
+        .btn_get:hover {
+            color: #fff;
+            background: #6754e2;
+            border-color: #6754e2;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        
+        
+        .new_footer_top .f_widget.about-widget .f_list li a:hover {
+            color: #5e2ced;
+        }
+        .new_footer_top .f_widget.about-widget .f_list li {
+            margin-bottom: 11px;
+        }
+        .f_widget.about-widget .f_list li:last-child {
+            margin-bottom: 0px;
+        }
+        .f_widget.about-widget .f_list li {
+            margin-bottom: 15px;
+        }
+        .f_widget.about-widget .f_list {
+            margin-bottom: 0px;
+        }
+        .new_footer_top .f_social_icon a {
+            width: 44px;
+            height: 44px;
+            line-height: 43px;
+            background: transparent;
+            border: 1px solid #e2e2eb;
+            font-size: 24px;
+        }
+        .f_social_icon a {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            font-size: 14px;
+            line-height: 45px;
+            color: #858da8;
+            display: inline-block;
+            background: #ebeef5;
+            text-align: center;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+        .ti-facebook:before {
+            content: "\e741";
+        }
+        .ti-twitter-alt:before {
+            content: "\e74b";
+        }
+        .ti-vimeo-alt:before {
+            content: "\e74a";
+        }
+        .ti-pinterest:before {
+            content: "\e731";
+        }
+        
+        .btn_get_two {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: #5e2ced;
+            border-color: #5e2ced;
+            color: #fff;
+        }
+        
+        .btn_get_two:hover {
+            background: transparent;
+            color: #5e2ced;
+        }
+        
+        .new_footer_top .f_social_icon a:hover {
+            background: #5e2ced;
+            border-color: #5e2ced;
+          color:white;
+        }
+        .new_footer_top .f_social_icon a + a {
+            margin-left: 4px;
+        }
+        .new_footer_top .f-title {
+            margin-bottom: 30px;
+            color: #263b5e;
+        }
+        .f_600 {
+            font-weight: 600;
+        }
+        .f_size_18 {
+            font-size: 18px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #4b505e;
+        }
+        .new_footer_top .f_widget.about-widget .f_list li a {
+            color: #6a7695;
+        }
+        
+        
+        
+        .footer_bg{
+            background-color: #4b505e00;
+            width: 1450px;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        .container89{
+            position: relative;
+            margin-top: 350px;
+            justify-content: center;
+        }
+
+        .finl{
+            position: absolute;
+            width: 400px;
+            height: 30px;
+            left: 150px;
+            margin-top: 20px;
+        }
+        .finr{
+            position: absolute;
+            width: 200px;
+            left: 1100px;
+            margin-top: 20px;
+        }
+
+
+        
+        @-moz-keyframes myfirst {
+          0% {
+            left: -25%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+        
+        @-webkit-keyframes myfirst {
+          0% {
+            left: -25%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+        
+        @keyframes myfirst {
+          0% {
+            left: -25%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+        
+        /*************footer End*****************/
+        
+        
+
+
+
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="f1">
+        <img src="" width="1450">
+        <div class="menu">
+            <div class="m1"><span class="m">Inicio</span></div>
+            <div class="m2"><span class="m">Noticias</span></div>
+            <div class="m3"><span class="m">Educación</span></div>
+            <div class="m4"><span class="m">Foro</span></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="f2">
+        <br>
+        <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#theCarousel" data-slide-to="1"></li>
+                <li data-target="#theCarousel" data-slide-to="2"></li>
+                <li data-target="#theCarousel" data-slide-to="3"></li>
+
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <video src="vid1.mp4" alt="pintura" width="1450" height="650"  autoplay loop>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <video src="vid2.mp4" alt="pintura" width="1450" height="650"  autoplay loop>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3> </h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <video src="vid3.mp4" alt="pintura" width="1450" height="650"  autoplay loop>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <video src="vid4.mp4" alt="pintura" width="1450" height="650"  autoplay loop>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        
+        
+    <div class="f3">
+        <div class="n1">
+            <div class="n1a">
+                <span class="noticias">Noticias</span>
+            </div>
+                
+        <div class="n2"></div>
+        <div class="n3"></div>
+        <div class="n4"></div>
+    </div>
+
+
+
+
+    
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Suscripción</h3>
+                        <p>Necesitas recibir un boletín de información? Entonces envianos un email.</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Paginas</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Noticias</a></li>
+                            <li><a href="#">Educación</a></li>
+                            <li><a href="#">Foro</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Ayuda</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terminos &amp; condiciones</a></li>
+                            <li><a href="#">Reporte</a></li>
+                            <li><a href="#">Documentacion</a></li>
+                            <li><a href="#">Soporte</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Redes sociales</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <video src="vidfoot.mp4" width="1450" height="299"  autoplay loop></video>
+            
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container89">
+            <div class="row align-items-center">
+                <div class="finl">
+                    <span>© Todos los derechos reservados por el autor, 2024.</span>
+                </div>
+                <div class="finr">
+                    <span>Hecho con en HTML</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+        
+</body>
+
+
+
+
+</html>
